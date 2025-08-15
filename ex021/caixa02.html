@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            background-color: rgb(102,102,102);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.356);
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background-color: rgba(255,255,255,0.1);
+            text-decoration: none;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.062);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        article > aside {
+            background-color: rgb(165, 165, 165);
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            border-radius: 50%;
+        }
+
+        h1, h2 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <ul>
+                <li><a href="#" aria-label="Página inicial">Home</a></li>
+                <li><a href="#" aria-label="Sobre nós">Sobre</a></li>
+                <li><a href="#" aria-label="Nossos serviços">Serviços</a></li>
+                <li><a href="#" aria-label="Entre em contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <h2>Assuntos do Site</h2>
+            <p>Conteúdo sobre diversos assuntos.</p>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>TÍTULO DE NOTÍCIA 1</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente natus dolores facere amet nesciunt vero maxime consectetur quaerat saepe rem, unde veniam vel quidem veritatis temporibus? Illum libero maxime atque.</p>
+                <aside>
+                    <p>Artigo escrito por Autor Desconhecido</p>
+                </aside>
+            </article>
+
+            <article>
+                <h2>TÍTULO DE NOTÍCIA 2</h2>
+                <p>Outro exemplo de notícia com conteúdo placeholder.</p>
+                <aside>
+                    <p>Artigo escrito por Outro Autor</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Daniel White</p>
+    </footer>
+
+    <div id="bola">
+
+    </div>
+</body>
+</html>
